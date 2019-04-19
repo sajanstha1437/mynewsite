@@ -1,0 +1,345 @@
+<html>
+<head>
+	<title>Final Project</title>
+	<style>
+	body{
+	margin:0px;
+	padding:0px;
+	}
+	
+	#maindiv{
+	background-image:linear-gradient(skyblue, white);
+	height:800px;
+	width:100%;
+	}
+	
+	#bannerdiv{
+	background-image:url("images/pokhara.jpg");
+		background-repeat: no-repeat;
+		background-size: 1000px, 150px;
+	height:200px;
+	width:1000px;
+	margin:auto;
+	text-align:center;
+	
+	}
+		#bannerdiv h1{
+			
+			color:yellow;
+			text-decoration:underline;
+			padding:50px;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+		}	
+		
+	#menudiv{
+	background-color:maroon;
+	height:30px;
+	width:1000px;
+	margin:auto;
+	}#menudiv td{
+		
+		border:1px, none;
+		border-top-left-radius: 10px;
+		background-color: maroon;
+		height:25px;
+		width:160px;
+		color: white;
+		text-align: center;
+	}
+	#menudiv td a:link{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:hover{
+		color:white;
+		text-decoration: underline;
+	}
+	#menudiv td a:visited{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:active{
+		color:red;
+		text-decoration: none;
+	}
+	.dropdown{
+		position:relative;
+		display:inline-block;
+		height: 25px;
+
+	}
+	.dropdown-menu
+	{
+		display:none;
+		position:absolute;
+		backgground-color:skyblue;
+		min-width: 160px;
+		height: 25px;
+		 z-index: 1;
+	}
+	.dropdown-menu a{
+		background-color: skyblue;
+		color:yellow;
+		text-decoration: none;
+		display: block;
+		height: 25px;
+	
+	}
+	.dropdown-menu a:hover{
+		background-color: brown;
+		color:maroon;
+		height: 25px;
+		
+	
+	}
+	.dropdown:hover .dropdown-menu{
+		display:block;
+		height: 25px;
+		
+	}
+	.dropdown:hover{
+		background-color:maroon;
+		text-decoration: none;
+		height: 25px;
+	}
+
+		
+	
+	#bodydiv{
+	background-image:linear-gradient(skyblue, white);
+	
+	height:500px;
+	width:1000px;
+	margin:auto;
+	}
+	
+	#body_leftdiv{
+	height:auto;
+	width:220px;
+	float:left;
+	}
+	#body_middlediv{
+	height:auto;
+	width:530px;
+	float:left;
+	}
+	#body_middle_contentdiv{
+	margin:5px;
+	
+	}
+	#body_right_top{
+	height:210px;
+	float:right;
+	width:248px;
+	background-image: linear-gradient(skyblue,white);
+	margin-bottom: 1px;
+	
+}
+#body_right_top td{
+	background-color: maroon;
+	text-align:center;
+	height:40px;
+}
+		#body_right_top td a:link{
+			color:white;
+			text-align:center;
+			text-decoration:none;
+		}
+		#body_right_top td a:hover{
+			color:white;
+			text-decoration:none;
+		}
+		#body_right_top td a:visited{
+			color:white;
+			text-decoration:none;
+		}
+		#body_right_top td a:active{
+			color:white;
+			text-decoration:none;
+		}
+
+#body_right_bottom{
+	height:350px;
+	float:right;
+	width:248px;
+	background-image:linear-gradient(white,skyblue);
+	margin-top: 1px;
+}
+
+	img{
+	border:5px groove lightyellow;
+	}
+			#footerdiv{
+				height:100px;
+				width:1000px;
+				margin:auto;
+				background-color: maroon;
+			}
+
+			#footerdiv td{
+				padding:10px;
+				color:white;
+			}
+
+			#footerdiv a:link, #body_right_top a:link{
+
+				color: white;
+				text-decoration:none;
+			}
+
+			#footerdiv a:hover, #body_right_top a:hover {
+
+				color: yellow;
+			}
+
+			#footerdiv a:visited, #body_right_top a:visited {
+
+				color: white;
+			}
+
+			#footerdiv a:active, #body_right_top a:active {
+
+				color: red;
+			}
+		
+	</style>
+</head>
+<body>
+<div id="maindiv">
+	<div id="bannerdiv">
+	  <h1>Welcome to my Travel Shop</h1>
+	</div>
+	<div id=menudiv>
+		<table align="right">
+			<tr>
+				<td ><a href="index.html">Home</a></td>
+				<td ><a href="intro.html">Introduction</a></td>
+				<td><a href="score.html">About Us</a></td>
+				<td><a href="gallery.html">Gallery</a></td>
+				<td><a href="anime.html">Animation</a></td>
+				 <td class="dropdown">
+			  Lessons
+				<div class="dropdown-menu">
+			  <a href="lesson.html">Lesson 1</a>
+				<a href="lesson2.html">Lesson 2</a>
+				<a href="lesson3.html">Lesson 3</a>
+			  </div>
+			  </td>
+				
+			</tr>
+		</table>
+
+	</div>
+	
+	<div id="bodydiv">
+		<div id="body_leftdiv">
+		<table>
+		<tr>
+			<td><a href="#" onclick="showimg1()"><img src="images/jacket.jpg" height="100px" width="100px"/></a></td>
+			<td><a href="#" onclick="showimg2()"><img src="images/bag.jpg" height="100px" width="100px"/></a></td>
+		</tr>
+		<tr>
+			<td><a href="#" onclick="showimg3()"><img src="images/stick.jpg" height="100px" width="100px"/></a></td>
+			<td><a href="#" onclick="showimg4()"><img src="images/shoes.jpg" height="100px" width="100px"/></a></td>
+		</tr>
+		<tr>
+			<td><a href="#" onclick="showimg5()"><img src="images/slippers.jpg" height="100px" width="100px"/></a></td>
+			<td><a href="#" onclick="showimg6()"><img src="images/gloves.jpg" height="100px" width="100px"/></a></td>
+		</tr>
+		<tr>
+			<td><a href="#" onclick="showimg7()"><img src="images/jacket1.jpg" height="100px" width="100px"/></a></td>
+			<td><a href="#" onclick="showimg8()"><img src="images/socks.jpg" height="100px" width="100px"/></a></td>
+		</tr>
+	
+		</table>
+		</div>
+	
+	<div id="body_middlediv">
+		<div id="body_middle_contentdiv">
+		,
+		<img src="images/jacket.jpg" height="430" width="500" id="newimg"/>
+		<script>
+		function showimg1(){
+			var img1="images/jacket.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg2(){
+			var img1="images/bag.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg3(){
+			var img1="images/stick.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg4(){
+			var img1="images/shoes.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg5(){
+			var img1="images/slippers.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg6(){
+			var img1="images/gloves.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg7(){
+			var img1="images/jacket1.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg8(){
+			var img1="images/socks.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		
+		
+		</script>
+		</div>
+
+	</div>
+	<div id=body_right_top>
+			<table width="248px" height="200px">
+				<tr>
+					<td><a href="shop.html"><img src="shop.jpg" width="20px" height="20px"/> Go to my shop</a></td>
+				</tr>
+				<tr>
+					<td><a href="score.html"><img src="score.jpg" width="20px" height="20px"/>  &nbsp;See the scores</a></td>
+				</tr>
+				<tr>
+					<td><a href="jsworld.html"><img src="js.png" width="20px" height="20px"/> &nbsp;Go to JS world</a></td>
+				</tr>
+				<tr>
+					<td><a href="form.html"><img src="form.jpg" width="20px" height="20px"/> &nbsp;Fill up the form</a></td>
+				</tr>
+				<tr>
+					<td><a href="map.html"><img src="map.jpg" width="20px" height="20px"/> &nbsp;Go around globe</a></td>
+				</tr>
+			</table>
+		</div>
+	
+	  <div id=body_right_bottom> </div>
+
+	</div>
+	
+		
+	</div>
+
+</div>
+<div id="footerdiv">
+	<table align="center">
+		<tr>
+			<td align="center">
+				<p> <a href="index.html">Home</a>| 
+					<a href="aboutus.html">About us</a>| 
+					<a href="gallery.html">Gallery</a>| 
+					<a href="reservation.html">Reservation</a>| 
+					<a href="contact.html">Contact Us</a><br/>
+			Copyrights all reserved @TouristManagementCommitteeNepal.<br/>2018</p>
+			</td>
+		</tr>
+	</table>
+
+</div>
+
+</body>
+</html>

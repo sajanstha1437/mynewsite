@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Final Project</title>
+<style type="text/css">
+	body{
+		margin:0px;
+		padding: 0px;
+		
+		
+	}
+#maindiv {
+    //background-color: #3DDAFB;
+    height: auto;
+    width: 100%;
+}
+#bannerdiv {
+    background-image: url("images/mountain.jpg");
+    background-repeat: no-repeat;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    height: 200px;
+    width: 1000px;
+    background-size: 1000px,150px;
+}
+	#bannerdiv h1{
+		
+		color:yellow;
+		text-decoration: underline;
+		text-align: center;
+		padding: 50px;
+	}
+#bodydiv {
+   // background-color: #F5F2C4;
+    margin: auto;
+	padding:10px;
+    height: auto;
+    width: 1000px;
+}
+#menudiv {
+    margin: auto;
+    height: 30px;
+    width: 1000px;
+	background-color:maroon;
+}
+	#menudiv td{
+		
+		border:1px, none;
+		border-top-left-radius: 10px;
+		background-color: maroon;
+		height:25px;
+		width:160px;
+		color: white;
+		text-align: center;
+	}
+	#menudiv td a:link{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:hover{
+		color:white;
+		text-decoration: underline;
+	}
+	#menudiv td a:visited{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:active{
+		color:red;
+		text-decoration: none;
+	}
+	.dropdown{
+		position:relative;
+		display:inline-block;
+		height: 25px;
+
+	}
+	.dropdown-menu
+	{
+		display:none;
+		position:absolute;
+		backgground-color:skyblue;
+		min-width: 160px;
+		height: 25px;
+		 z-index: 1;
+	}
+	.dropdown-menu a{
+		background-color: skyblue;
+		color:yellow;
+		text-decoration: none;
+		display: block;
+		height: 25px;
+	
+	}
+	.dropdown-menu a:hover{
+		background-color: brown;
+		color:maroon;
+		height: 25px;
+		
+	
+	}
+	.dropdown:hover .dropdown-menu{
+		display:block;
+		height: 25px;
+		
+	}
+	.dropdown:hover{
+		background-color:maroon;
+		text-decoration: none;
+		height: 25px;
+	}
+	form table{
+		background-image: linear-gradient(skyblue, white);
+	}
+	form td{
+		align:left;
+		height:50px;
+		width: 250px;
+	}
+	ul{
+		list-style-type: none;
+		
+	}
+	#body_leftdiv
+	{
+		width:750px;
+		height:auto;
+		float:left;
+		padding: 0px;
+		margin: 0px;
+	}
+#body_rightdiv {
+    margin: 0px;
+    height: 750px;
+    width: 250px;
+    float: right;
+    background-image: linear-gradient(white,skyblue);
+}
+#body_right_topdiv {
+    height: 400px;
+    width: 100%;
+}
+	#body_right_topdiv td{
+		background-color:maroon;
+		color:white;
+		padding:5px;
+		height:30px;
+	}	
+	.heading{
+		height:30px;
+		text-decoration:underline;
+		color:#F0EC86;
+		padding:0px;
+		margin:0px;
+	}
+	#body_right_topdiv a:link{
+		
+		color:white;
+	}
+	#body_right_topdiv a:hover{
+		
+		color:white;
+		text-decoration:none;
+	}
+	#body_right_topdiv a:visited{
+		
+		color:white;
+	}
+	#body_right_topdiv a:active{
+		
+		color:red;
+	}
+	
+</style>
+</head>
+
+<body>
+<div id="maindiv">
+<div id="bannerdiv"><h1>Welcome to the Javascript World!!!</h1></div>
+	<div id=menudiv>
+		<table align="right">
+			<tr>
+				<td ><a href="index.html">Home</a></td>
+				<td ><a href="intro.html">Introduction</a></td>
+				<td><a href="Score.html">About Us</a></td>
+				<td><a href="gallery.html">Gallery</a></td>
+				<td><a href="anime.html">Animation</a></td>
+				 <td class="dropdown">
+			  Lessons
+				<div class="dropdown-menu">
+			  <a href="lesson.html">Lesson 1</a>
+				<a href="lesson2.html">Lesson 2</a>
+				<a href="lesson3.html">Lesson 3</a>
+			  </div>
+			  </td>
+				
+			</tr>
+		</table>
+
+	</div>
+	
+<div id="bodydiv">
+<div id="body_leftdiv">
+	<form name="form1">
+	<table width="750px" style="margin:0px;padding:0px;" border="0px">
+  	<tbody>
+    <tr>
+		<td colspan="3" align="center"><h1>PLEASE FILL UP THE FORM</h1></td>
+     
+    </tr>
+    <tr>
+      <td align="center">Name:</td>
+      <td><input type="text" name="name" value=""/></td>
+      <td><input type="button" onclick="showName()" value="ShowName"/>
+		<script>
+		  function showName(){
+			  
+			  var fullname=document.form1.name.value;
+			  alert("Hello! "+fullname );
+		  }
+		  
+		  </script>
+		
+		</td>
+    </tr>
+    <tr>
+      <td align="center">Username:</td>
+	  <td><input type="text" name="username" value=""/>
+		
+		
+		</td>
+	  <td><input type="button" onclick="showUserName()" value="ShowUserName"/>
+		<script>
+		  function showUserName(){
+			var str=document.form1.username.value;
+		 	alert("Your Username is: "+str );
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Password:</td>
+      <td><input type="password" name="password" value=""/></td>
+	  <td><input type="button" onclick="showPassword()" value="ShowPassword"/>
+		<script>
+		  function showPassword(){
+
+			  var str=document.form1.password.value;
+			  alert("Your Password is: "+str );
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Phone:</td>
+      <td><input type="text" name="phone" value=""/></td>
+	  <td><input type="button" onclick="showNumber()" value="ShowNumber"/>
+		<script>
+		  function showNumber(){
+
+			  var str=document.form1.phone.value;
+			  alert("Your Phone Number is: "+str );
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Gender: </td>
+      <td><input type="radio" name="gender" value="Male"/>Male
+      <input type="radio" name="gender" value="Female"/>Female</td>
+	  <td><input type="button" onclick="showGender()" value="ShowGender"/>
+		<script>
+		  function showGender(){
+
+			  var str=document.form1.gender.value;
+			  alert("You are : "+str );
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Languages:</td>
+      <td>
+		  <ul>
+		  
+			<li><input type="checkbox" name="language" value="English" checked/>English</li>
+			<li><input type="checkbox" name="language" value="Nepali"/>Nepali</li>
+			<li><input type="checkbox" name="language" value="Chinese"/>Chinese</li>
+			<li><input type="checkbox" name="language" value="Japanese"/>Japanese</li>
+		  </ul>
+		
+		</td>
+	  <td><input type="button" onclick="showLanguage()" value="ShowLanguage"/>
+		
+		  <script type="text/javascript">
+			function showLanguage(){
+				var lang=document.getElementsByName('language');
+				var selectedItems="";
+				for(var i=0; i<lang.length; i++){
+					if(lang[i].type=='checkbox' && lang[i].checked==true)
+						selectedItems+=lang[i].value+"\n";
+				}
+				alert("You can speak : "+ "\n"+ selectedItems);
+			}
+		  </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Choose your school: </td>
+      <td>
+		 <select name="college">
+		 <option value="Hyakumanben" selected>Hyakumanben</option> 
+		 <option value="Kyoto Ekimae">Kyoto Ekimae</option> 
+		 <option value="Rakuhoku">Rakuhoku</option> 
+		 <option value="Kamogawa">Kamogawa</option> 
+		 </select>
+		
+		</td>
+	  <td><input type="button" onclick="showCollege()" value="ShowCollege"/>
+		<script>
+		  function showCollege()
+			{
+			  
+					  var str=document.form1.college.value;
+					  alert("You selected: "+str );
+				
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Choose the course:</td>
+      <td>
+		 <select name="course" multiple="multiple">
+		 <option value="" selected>Select from the courses</option>
+		 <option value="Web Designing" >Web Designing</option> 
+		 <option value="IT administrator">IT administrator</option> 
+		 <option value="Data Analyst">Data Analyst</option> 
+		 <option value="IT E-business">IT E-business</option> 
+		 </select>
+		
+		</td>
+	  <td><input type="button" onclick="showCourse()" value="ShowCourse"/>
+		<script>
+		  function showCourse()
+			{
+			  
+					  var str=document.form1.course.value;
+					  alert("You selected: "+str );
+				
+		  }
+
+		 </script>
+
+    </tr>
+		<tr>
+			<td colspan="3"><h3>Hover on the image to see the Onmouseover and Onmouseout event here in this pic:</h3>
+		
+	</td>
+		
+		</tr>
+    
+	<tr>
+	<td colspan="3" id="event">
+		<img src="images/ocean.jpg" height="200px" width="750px" onmouseover="this.src='images/trees.jpg'" onmouseout="this.src='images/ocean.jpg'"/>
+	</td>
+		
+		</tr>
+    
+  	</tbody>
+	</table>
+
+	
+	</form>
+</div>
+<div id="body_rightdiv">
+  <div id="body_right_topdiv">
+	<table width="240" border="0">
+  <tbody>
+    <tr>
+		<td><h3 class="heading">Using Javascript:</h3></td>
+    </tr>
+	   <tr>
+      <td><p onclick="openWindow()">Open new window</p>
+		   <script>
+				var newWindow;
+
+				function openWindow() {
+				  newWindow = window.open("", "", "width=250, height=250");
+				}
+
+				
+				</script>
+		   </td>
+    </tr>
+    <tr>
+      <td><p onclick="resizeWindow()">Resize window</p>
+		<script>
+			function resizeWindow() {
+				  newWindow.resizeTo(500, 500);
+				  newWindow.focus();
+				}
+		  </script>
+		</td>
+    </tr>
+	  
+	  <tr>
+      <td><p onclick="closeWindow()">Close the window</p>
+		  <script>
+			function closeWindow() {
+				  if(newWindow){
+					  newWindow.close();
+					  newWindow=null;
+					  
+				  }
+				}
+		  </script>
+		  
+		  </td>
+    </tr>  
+	  
+	  
+    <tr>
+		<td><a href="#event">Onmouseover</a></td>
+    </tr>
+    
+    <tr>
+		<td><a href="#bannerdiv"><p onclick=document.getElementById("maindiv").style.backgroundColor="skyblue">Change background color to skyblue</p></a></td>
+    </tr>
+    <tr>
+      <td><a href="#bannerdiv"><p onclick=document.getElementById("maindiv").style.backgroundColor="maroon">Change background color to maroon</p></a></td>
+    </tr>
+   
+    <tr>
+      <td>
+	  
+	  
+	  </td>
+    </tr>
+    <tr>
+		<td height="25">
+		<table border="0">
+		<tr>
+		
+		<td><a href="#here" onclick="showimg1()"><img src= "images/cat.jpg" width="50" height="50" name="cat"></a></td>
+		<td><a href="#here" onclick="showimg2()"><img src= "images/budhi.png" width="50" height="50" name="couple"></a></td>
+		<td><button onclick="showimg3()" name="amrita">Amrita</button></td>
+		<td><button onclick="showimg4()" name="sajan">Sajan</button></td>
+		</tr>
+		</table>
+		
+		
+		</td>
+    </tr>
+    <tr>
+      <td colspan="4" id="here">
+	  
+			<img src="images/cat.jpg" width="240" height="250" id="img"/>
+			<script>
+			function showimg1(){
+				
+				var img1="images/cat.jpg"
+				document.getElementById("img").src=img1.replace('240*250', '200*200');
+
+			}
+			function showimg2(){
+				
+				var img1="images/budhi.png"
+				document.getElementById("img").src=img1.replace('240*250', '200*200');
+			}
+			function showimg3(){
+				
+				var img1="images/amrita.jpg"
+				document.getElementById("img").src=img1.replace('240*250', '200*200');
+
+			}
+			function showimg4(){
+				
+				var img1="images/sajan.jpg"
+				document.getElementById("img").src=img1.replace('240*250', '200*200');
+
+			}
+			</script>
+	  </td>
+    </tr>
+  </tbody>
+</table>
+
+	  
+  </div>
+</div>
+	
+</div>
+</div>
+</body>
+</html>

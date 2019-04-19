@@ -1,0 +1,304 @@
+<html>
+<head>
+	<title>Tourist Management System</title>
+	<link rel="stylesheet" href="slider.css" type="text/css">
+	<script type="text/javascript" src="main.js"></script>
+	
+<style>
+
+body{
+
+	margin:0px;
+	padding:0px;
+	
+}
+
+#maindiv{
+
+height:800px;
+width:500 px;
+margin:auto;
+background-image: linear-gradient(skyblue, white);
+}
+
+#bannerdiv{
+	margin:auto;
+	background: url("F:/college files/3rd sem/Final Project/images/mountain.jpg");
+	background-size:100%, 100%;
+	background-repeat: no-repeat;
+	height:150px;
+	width: 1000px;
+	}
+
+#banner_h1{
+	color:yellow;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#tablediv{
+
+	height:30px;
+	width:1000px;
+	margin:auto;
+	//background-color:white;
+}
+
+#menu_td{
+
+	background-color: maroon;
+	border:1px none;
+	border-top-left-radius: 10px;
+	width:150px;
+	height:30px;
+	text-align: center;
+	color:white;
+}
+#tablediv td a:link{
+
+	color:white;
+	text-decoration: none;
+
+}
+#tablediv td a:hover{
+
+	color:white;
+	text-decoration: underline;
+
+}
+#tablediv td a:visited{
+
+	color:white;
+	text-decoration: none;
+
+}
+#tablediv td a:active{
+
+	color:red;
+	text-decoration: none;
+
+}
+
+#bodydiv{
+	height:auto;
+	margin:auto;
+	width:1000px;
+}
+
+#body_left{
+	height:600px;
+	float:left;
+	width:750px;
+	background-image:linear-gradient(lightyellow,white);
+
+}
+
+#body_left_top{
+	height:400px;
+	width:100%;
+	background-color: yellow;
+
+}
+
+#body_left_bottomleft{
+	height:200px;
+	width:250px;
+	float:left;
+	background-color: grey;
+	//background-image: url("F:/college files/3rd sem/Final Project/images/himal.jpg");
+	//background-size:250px, 200px;
+	//background-repeat: no-repeat;
+
+
+}
+
+#body_left_bottomiddle{
+	height:200px;
+	width:250px;
+	float:left;
+	//background-image: url("F:/college files/3rd sem/Final Project/images/rhino.jpg");
+	//background-size:100%, 100%;
+	//background-repeat: no-repeat;
+
+}
+
+#body_left_bottomright{
+	height:200px;
+	width:250px;
+	float:right;
+	background-color: red;
+	//background-image: url("F:/college files/3rd sem/Final Project/images/buddha.jpg");
+	//background-size:250px, 200px;
+	//background-repeat: no-repeat;
+
+
+}
+
+#body_right_top{
+	height:200px;
+	float:right;
+	width:248px;
+	background-image: linear-gradient(skyblue, white);
+	margin-bottom: 1px;
+	
+}
+
+#body_right_bottom{
+	height:398px;
+	float:right;
+	width:248px;
+	background-image:linear-gradient(white,skyblue);
+	margin-top: 1px;
+}
+
+#table_form{
+	height:180px;
+	width: 200px;
+	margin: 10px;
+	background-image: linear-gradient(lightgrey,white,lightgrey);
+	
+	padding:5px;
+	color:maroon;
+
+}
+
+#table_form a:link {
+
+	color: maroon;
+}
+
+#table_form a:hover {
+
+	color: blue;
+}
+
+#footerdiv{
+	height:100px;
+	width:1000px;
+	margin:auto;
+	background-color: maroon;
+}
+
+#footerdiv td{
+	padding:10px;
+	color:white;
+}
+
+#footerdiv a:link {
+
+	color: white;
+}
+
+#footerdiv a:hover {
+
+	color: blue;
+}
+
+#footerdiv a:visited {
+
+	color: white;
+}
+
+#footerdiv a:active {
+
+	color: red;
+}
+
+
+</style>
+</head>
+
+
+
+<body>
+<div id=maindiv>
+
+	<div id=bannerdiv>
+		<h1 id=banner_h1>Welcome to Nepal</h1>
+
+	</div>
+	<div id=tablediv>
+		<table align="right">
+			<tr>
+				<td id="menu_td"><a href="index.html">Home</a></td>
+				<td id="menu_td"><a href="aboutus.html">About Us</a></td>
+				<td id="menu_td"><a href="gallery.html">Gallery</a></td>
+				<td id="menu_td"><a href="reservation.html">Reservation</a></td>
+				<td id="menu_td"><a href="contact.html">Contact us</a></td>
+			</tr>
+		</table>
+
+	</div>
+
+	<div id=bodydiv>
+		<div id=body_left> 
+
+			<div id=body_left_top>
+
+				
+
+			</div>
+
+			<div id=body_left_bottomleft>
+				<img src="F:/college files/3rd sem/Final Project/images/rhino.jpg" width="250px" height="200px"/>
+			</div>
+			<div id=body_left_bottomiddle>
+				<img src="F:/college files/3rd sem/Final Project/images/buddha.jpg" width="250px" height="200px"/>
+			</div>
+
+			<div id=body_left_bottomright>
+				<img src="F:/college files/3rd sem/Final Project/images/himal.jpg" width="250px" height="200px"/>
+			</div>
+
+
+		</div>
+		<div id=body_right_top>
+			<form action="c:/xampp/htdocs/st181711/1011/check.php">
+				<table id="table_form">
+					<tr>
+						<td align="center" colspan="2"><p><u>Login for existing users</u></p></td>
+					</tr>
+					<tr><td>Username:</td>
+						<td><input type="text" name="username" size="15" /></td>
+					</tr>
+					<tr><td>Password:</td>
+						<td><input type="password" name="password" size="15" /></td>
+					</tr>
+					<tr>
+						<td align="center" colspan="2"><button type="submit">Login</button></td>
+					</tr>
+					<tr>
+						<td align="center" colspan="2"><p><u>New users? <a href="form.html">SignUp Here</a></u></p></td>
+					</tr>
+				</table>
+			</form>
+
+		</div>
+	
+		<div id=body_right_bottom> </div>
+
+	</div>
+	
+
+</div>
+<div id="footerdiv">
+	<table align="center">
+		<tr>
+			<td align="center">
+				<p> <a href="index.html">Home</a>| 
+					<a href="aboutus.html">About us</a>| 
+					<a href="gallery.html">Gallery</a>| 
+					<a href="reservation.html">Reservation</a>| 
+					<a href="contact.html">Contact Us</a><br/>
+			Copyrights all reserved @TouristManagementCommitteeNepal.<br/>2018</p>
+			</td>
+		</tr>
+	</table>
+
+</div>
+
+
+</body>
+
+
+</html>
