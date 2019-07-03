@@ -2,7 +2,7 @@
 	
 		margin:0px;
 		padding:0px;
-		background-image:url('../images/background.jpg');
+		background-image:url('images/background.jpg');
 		
 	}
 	
@@ -19,7 +19,7 @@
 	
 	#bannerdiv{
 		margin:auto;
-		background: url("../images/visitnepal2020.png");
+		background: url("images/visitnepal2020.png");
 	
 		background-size:100%, 100%;
 		background-repeat: no-repeat;
