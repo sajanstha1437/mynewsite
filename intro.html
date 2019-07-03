@@ -1,0 +1,206 @@
+<html>
+<head>
+	<title>Final Project</title>
+	<link rel="stylesheet" href="slider.css" type="text/css">
+	<script type="text/javascript" src="main.js"></script>
+	
+<link href="css/intro.css" type="text/css" rel="stylesheet"/>
+<link href="css/main.css" type="text/css" rel="stylesheet"/>
+
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section --></head>
+
+
+
+<body>
+<div id=maindiv>
+
+	<div id=bannerdiv>
+	  
+	</div>
+	<div id=menudiv>
+			<table align="right">
+				<tr>
+					<td ><a href="index.html">Home</a></td>
+					<td ><a href="intro.html">Introduction</a></td>
+					<td><a href="aboutus.html">About Us</a></td>
+					<td><a href="gallery.html">Gallery</a></td>
+					<td><a href="bookings.html">Reservation</a></td>
+				 <td class="dropdown">
+				  Lessons
+				<div class="dropdown-menu">
+			  <a href="lesson.html">Lesson 1</a>
+				<a href="lesson2.html">Lesson 2</a>
+				<a href="lesson3.html">Lesson 3</a>
+			  </div>
+				  </td>
+					
+				</tr>
+			</table>
+
+	</div>
+		
+	<div id=bodydiv>
+		<div id=body_left> 
+
+			<div id=body_left_top>
+				<script type="text/javascript">
+					function changeContent(){
+						document.getElementById("readmorearea").style.display="block";
+						document.getElementById("abbreviate").style.display="block";
+						document.getElementById("Details").style.display="none";
+					
+					}
+					
+					function changeBack(){
+						document.getElementById("readmorearea").style.display="none";
+						document.getElementById("abbreviate").style.display="none";
+						document.getElementById("Details").style.display="block";
+					}
+					function changeContent1(){
+						document.getElementById("programming").style.display="block";
+						document.getElementById("Details1").style.display="none";
+						document.getElementById("abbreviate1").style.display="block";
+						document.getElementById("readmorearea").style.display="none";
+						document.getElementById("Details").style.display="block";
+						document.getElementById("abbreviate").style.display="none";
+					}
+					
+					function changeBack1(){
+						document.getElementById("programming").style.display="none";
+						document.getElementById("Details1").style.display="block";
+						document.getElementById("abbreviate1").style.display="none";
+					}
+					
+				</script>
+				
+			<p align="justify">As we know that Nepal is the one of the most touristic places in the world where one can find a peaceful environment with the natural beauties.</p>
+<a href="#" id="Details"><img src="images/down.jpg" height="20px" width="20px"  onclick="changeContent();"/></a>
+
+
+<p id="readmorearea" align="justify">The coming year 2020 is announced by the Nepalese Government as a VISIT NEPAL year where they believe to attract the huge number of tourists from all over the world. 8 years ago, it was declared as a VISIT NEPAL year in which year there was a drastatic change in the fieid of tourism in Nepal. From the year number of tourist incoming to the country increased in a significant way that the economy of the whole country got a huge benefits. Alongwith the country's economy the attraction of local people also developed towards the field of Tourism in the country. 
+				<br/>
+				At that time although the other management was going well inside the country, but the major problem was developing within the situation. That was the database of the incoming tourists. Since there were not so much development of IT in those days so, there were not a proper IT personnel who could deal with it and had to hire from any other country with a large payscale. So, in order to remove this demerits in our country, we proposed to develop our project which would not be beneficial for the record of databases only but also will be helpful for the websites purposes also.
+                 </p>
+<a href="#"><img src="images/up.png" height="20px" width="20px" id="abbreviate" onClick="changeBack();"></a>
+
+<p align="justify">
+				About Our Project:
+				</p>
+<a href="#"><img src="images/down.jpg" height="20px" width="20px" id="Details1" onClick="changeContent1();"></a>
+<p id="programming" align="justify">
+	Our Project is mainly based on the database theme that keeps the record of the tourists visiting to Nepal and the information about tours and planning while being in Nepal. This project consists of two parts.<br/>
+    Website Part<br/>
+    Database Part<br/>
+    
+    The website part is the one from which the tourist/user can view about our Nepal. From there S/he can get the different informations required for their tours and stay during the holiday in Nepal such visiting places, trekking places, place for home stay, etc. For the surfing over the website user should not have to be registered in our database but if they want to get a reservation for the tours and trekkings then they need to be registered for which a separate login field has been created. <br/>
+    And then comes the part of the Database section where an administrator handles over the situation like Creation of new users, updating the users information manually if necessary, deleting the users record on demand. Also the tourists can provide us a suggestions or any complainig issues through our websites in the Feedback field.
+				</p>
+<a href="#"><img src="images/up.png" height="20px" width="20px" id="abbreviate1" onClick="changeBack1();"></a>
+			</div>
+
+			<div id=body_left_bottomleft>
+				<img src="images/rhino.jpg" width="250px" height="200px"/>
+			</div>
+			<div id=body_left_bottomiddle>
+				<img src="images/buddha.jpg" width="250px" height="200px"/>
+			</div>
+
+			<div id=body_left_bottomright>
+				<img src="images/himal.jpg" width="250px" height="200px"/>
+			</div>
+
+
+
+		</div>
+		<div id=body_right>
+		<div id=body_right_top>
+						<form action="admin/index.php" method="POST">
+        	<table style="color:white;">
+            	<tr>
+                	<td colspan="2">Users Login!!! </td>
+                	
+                </tr>
+                <tr>
+                	<td>Username:</td>
+                	<td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                	<td>Password:</td>
+                	<td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                	<td colspan="2"><button>Login</button></td>
+                	
+                </tr>
+                 <tr>
+                	<td colspan="2"><a href="admin/indexs.php">Admin Login</a></td>
+                	
+                </tr>
+            </table>
+        </form> 
+
+		</div>
+	
+		<div id=body_right_bottom>
+        
+		<table>
+        <tr>
+				<td><p class="explore">Explore Over</p> <p id="nepal">Nepal</p></td>
+		  </tr>
+			<tr>
+				<td><a href="state1.html">State No.1</a></td>
+			</tr>
+			<tr>
+				<td><a href="state2.html">State No.2</td>
+			</tr>
+			<tr>
+				<td><a href="state3.html">State No.3</td>
+			</tr>
+			<tr>
+				<td><a href="state4.html">State No.4</td>
+			</tr>
+			<tr>
+				<td><a href="state5.html">State No.5</td>
+			</tr>
+			<tr>
+				<td><a href="state6.html">State No.6</td>
+			</tr>
+			<tr>
+				<td><a href="state7.html">State No.7</td>
+					
+			</tr>
+		
+			
+		</table>
+		
+         </div>
+
+		</div>
+	
+
+</div>
+<div id="footerdiv">
+	<table align="center">
+		<tr>
+			<td align="center">
+				<p> <a href="index.html">Home</a>| 
+					<a href="aboutus.html">About us</a>| 
+					<a href="gallery.html">Gallery</a>| 
+					<a href="reservation.html">Reservation</a>| 
+					<a href="contact.html">Contact Us</a><br/>
+			Copyrights all reserved @TouristManagementCommitteeNepal.<br/>2018</p>
+			</td>
+		</tr>
+	</table>
+
+</div>
+</div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,274 @@
+<html>
+<head>
+	<title>Final Project</title>
+	<link rel="stylesheet" href="slider.css" type="text/css">
+	<script type="text/javascript" src="main.js"></script>
+	
+<link href="css/aboutus.css" type="text/css" rel="stylesheet"/>
+<link href="css/main.css" type="text/css" rel="stylesheet"/>
+
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+    <style>
+		#package1{
+			display:none;
+		}
+		#package2{
+			display:none;
+		}
+		#package3{
+			display:none;
+		}
+		#package4{
+			display:none;
+		}
+	</style>
+    
+    
+    
+    </head>
+
+
+
+<body>
+<div id=maindiv>
+
+	<div id=bannerdiv>
+	 
+	</div>
+	<div id=menudiv>
+			<table align="right">
+				<tr>
+					<td ><a href="index.html">Home</a></td>
+					<td ><a href="intro.html">Introduction</a></td>
+					<td><a href="aboutus.html">About Us</a></td>
+					<td><a href="gallery.html">Gallery</a></td>
+					<td><a href="bookings.html">Reservation</a></td>
+				  <td class="dropdown">
+				  Lessons
+				<div class="dropdown-menu">
+			  <a href="lesson.html">Lesson 1</a>
+				<a href="lesson2.html">Lesson 2</a>
+				<a href="lesson3.html">Lesson 3</a>
+			  </div>
+				  </td>
+					
+				</tr>
+			</table>
+
+	</div>
+		
+	<div id=bodydiv>
+		<div id=body_left> 
+
+			<div id=body_left_top>
+            <script>
+				function showPackage1(){
+					document.getElementById("package1").style.display="block";
+					document.getElementById("package2").style.display="none";
+					document.getElementById("package3").style.display="none";
+					document.getElementById("package4").style.display="none";
+					document.getElementById("desc_table").style.display="none";
+				}
+				function showPackage2(){
+					document.getElementById("package1").style.display="none";
+					document.getElementById("package2").style.display="block";
+					document.getElementById("package3").style.display="none";
+					document.getElementById("package4").style.display="none";
+					document.getElementById("desc_table").style.display="none";
+				}
+				function showPackage3(){
+					document.getElementById("package1").style.display="none";
+					document.getElementById("package2").style.display="none";
+					document.getElementById("package3").style.display="block";
+					document.getElementById("package4").style.display="none";
+					document.getElementById("desc_table").style.display="none";
+				}
+				function showPackage4(){
+					document.getElementById("package1").style.display="none";
+					document.getElementById("package2").style.display="none";
+					document.getElementById("package3").style.display="none";
+					document.getElementById("package4").style.display="block";
+					document.getElementById("desc_table").style.display="none";
+				}
+				function back(){
+					document.getElementById("desc_table").style.display="block";
+					document.getElementById("package1").style.display="none";
+				}
+			
+			</script>
+            
+            
+            		<table id="desc_table" width="100%" height="50%">
+                    <tr >
+                    	<td  colspan="2" width="40%"><img src="images/nature.jpg" width="100%" height="200px"/></td>
+                        <td  colspan="3" width="60%" align="left">
+                            <b><u>Package 1:</u></b><br/>
+                            Fewa Lake boating Package<br/>
+                            Rs. 2500 per person<br/></td>
+                    </tr>
+                    </table>
+                    <table id="package1" width="100%" height="50%">
+                    <tr>
+                        <td colspan="2" width="40%" ><img src="images/package1.jpg" width="100%" height="200px"/></td>
+                         <td colspan="3" width="60%" align="left">
+                             <b><u>Package 1:</u></b>
+                             <br/>Fewa Lake boating Package<br/>
+                             Rs. 2500 per person<br/></td>
+                    </tr>
+                    </table>
+                    
+                    <table id="package2" width="100%" height="50%">
+                    <tr>
+                        <td colspan="2" width="40%" ><img src="images/package2.jpg" width="100%" height="200px"/></td>
+                         <td colspan="3" width="60%" align="left">
+                         <b><u>Package 1:</u></b>
+                         <br/>Fewa Lake boating Package<br/>
+                         Rs. 2500 per person<br/></td>
+                    </tr>
+                    </table>
+                    
+                    <table id="package3" width="100%" height="50%">
+                    <tr>
+                        <td colspan="2" width="40%" ><img src="images/package3.jpg" width="100%" height="200px"/></td>
+                         <td colspan="3" width="60%" align="left">
+                         	<b><u>Package 1:</u></b>
+                            <br/>Fewa Lake boating Package
+                            <br/>Rs. 2500 per person<br/></td>
+                    </tr>
+                    </table>
+                    
+                    <table id="package4" width="100%" height="50%">
+                    <tr>
+                        <td colspan="2" width="40%" ><img src="images/package4.jpg" width="100%" height="200px"/></td>
+                         <td colspan="3" width="60%" align="left" padding="10px">
+                         	<b><u>Package 1:</u></b><br/>
+                            Fewa Lake boating Package<br/>
+                            Rs. 2500 per person<br/>
+                            Package Details: Pokhara visit, Boating on fewa lake for 2 hrs with a boatman.<br/>
+                          </td>
+                    </tr>
+                    </table>
+                    
+                    <table height="50%" width="100%">
+                	<tr>
+                   		 <td class="image" width="20%"><img src="images/package1.jpg" height="100px" width="100%" onclick="showPackage1()"/td>
+                    	<td class="image" width="20%"><img src="images/package2.jpg" height="100px" width="100%" onclick="showPackage2()"/></td>
+                    	<td class="image" width="20%"><img src="images/package3.jpg" height="100px" width="100%" onclick="showPackage3()"/></td>
+                    	<td class="image" width="20%"><img src="images/package4.jpg" height="100px" width="100%" onclick="showPackage4()"/></td>
+                    	<td class="image" width="20%"><img src="images/package5.jpg" height="100px" width="100%" onclick="showPackage5()"/></td>
+                    	
+                    	
+                    </tr>
+                   
+                </table>
+                
+                
+                
+				</div>
+
+			<div id=body_left_bottomleft>
+				<img src="images/rhino.jpg" width="250px" height="200px"/>
+			</div>
+			<div id=body_left_bottomiddle>
+				<img src="images/buddha.jpg" width="250px" height="200px"/>
+			</div>
+
+			<div id=body_left_bottomright>
+				<img src="images/himal.jpg" width="250px" height="200px"/>
+			</div>
+
+
+
+		</div>
+		<div id=body_right>
+		<div id=body_right_top>
+						<form action="admin/index.php" method="POST">
+        	<table style="color:white;">
+            	<tr>
+                	<td colspan="2">Users Login!!! </td>
+                	
+                </tr>
+                <tr>
+                	<td>Username:</td>
+                	<td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                	<td>Password:</td>
+                	<td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                	<td colspan="2"><button>Login</button></td>
+                	
+                </tr>
+                 <tr>
+                	<td colspan="2"><a href="admin/indexs.php">Admin Login</a></td>
+                	
+                </tr>
+            </table>
+        </form> 
+
+		</div>
+	
+		<div id=body_right_bottom>
+        
+		<table>
+        <tr>
+				<td><p class="explore">Explore Over</p> <p id="nepal">Nepal</p></td>
+		  </tr>
+			<tr>
+				<td><a href="state1.html">State No.1</a></td>
+			</tr>
+			<tr>
+				<td><a href="state2.html">State No.2</td>
+			</tr>
+			<tr>
+				<td><a href="state3.html">State No.3</td>
+			</tr>
+			<tr>
+				<td><a href="state4.html">State No.4</td>
+			</tr>
+			<tr>
+				<td><a href="state5.html">State No.5</td>
+			</tr>
+			<tr>
+				<td><a href="state6.html">State No.6</td>
+			</tr>
+			<tr>
+				<td><a href="state7.html">State No.7</td>
+					
+			</tr>
+		
+			
+		</table>
+		
+         </div>
+
+		</div>
+	
+
+</div>
+<div id="footerdiv">
+	<table align="center">
+		<tr>
+			<td align="center">
+				<p> <a href="index.html">Home</a>| 
+					<a href="aboutus.html">About us</a>| 
+					<a href="gallery.html">Gallery</a>| 
+					<a href="reservation.html">Reservation</a>| 
+					<a href="contact.html">Contact Us</a><br/>
+			Copyrights all reserved @TouristManagementCommitteeNepal.<br/>2018</p>
+			</td>
+		</tr>
+	</table>
+
+</div>
+</div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,262 @@
+<?php
+include("includes/config.php");
+
+?>
+<html>
+<head>
+	<title>Final Project</title>
+	<link rel="stylesheet" href="slider.css" type="text/css">
+	<script type="text/javascript" src="main.js"></script>
+	
+<link rel="stylesheet" href="css/main.css" type="text/css"/>
+<link rel="stylesheet" href="css/aboutus.css" type="text/css"/>
+
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+    <style>
+		#body_top{
+			width:100%;
+			background-color:skyblue;
+		}
+		#body_top_left{
+			width:100%;
+			
+		}
+		#bottomdiv{
+			width:100%;
+			background-color:lightgreen;
+		}
+		#bottomtable td, th{
+		background-color:skyblue;
+		border-bottom:1px thin red;
+		
+		}
+		#state1{
+			display:none;
+		}
+		#state2{
+			display:none;
+		}
+		#state3{
+			display:none;
+		}
+		#state4{
+			display:none;
+		}
+	</style>
+    
+    
+    </head>
+
+
+
+<body>
+
+	<div id=bannerdiv></div>
+	<div id=menudiv>
+		<table align="right">
+			<tr>
+				<td ><a href="index.html">Home</a></td>
+				<td ><a href="intro.html">Introduction</a></td>
+				<td><a href="aboutus.html">About Us</a></td>
+				<td><a href="gallery.html">Gallery</a></td>
+				<td><a href="bookings.html">Reservation</a></td>
+				 <td class="dropdown">
+					 Feedback
+						<div class="dropdown-menu">
+						 <a href="lesson.html">Comments</a>
+						<a href="lesson2.html">Inquiry</a>
+						<a href="lesson3.html">Issues</a>
+						</div>
+					</td>
+				
+			</tr>
+		</table>
+	</div>
+
+	<div id=bodydiv>
+		<div id=body_top> 
+
+			<div id=body_top_left>
+				<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+                <div id="wowslider-container0">
+                <div class="ws_images">
+                    <ul>
+                        <li><img src="data0/images/buddha.jpg" alt="buddha" title="buddha" id="wows0_0"/></li>
+                        <li><img src="data0/images/himal.jpg" alt="himal" title="himal" id="wows0_1"/></li>
+                        <li><a href="http://wowslider.net"><img src="data0/images/nature.jpg" alt="jquery carousel slider" title="nature" id="wows0_2"/></a></li>
+                        <li><img src="data0/images/rhino.jpg" alt="rhino" title="rhino" id="wows0_3"/></li>
+                        <li><img src="data0/images/danphe.jpg" alt="danphe" title="danphe" id="wows0_4"/></li>
+                    </ul>
+                </div>
+                <div class="ws_bullets">
+                    <div>
+                        <a href="#" title="buddha"><span><img src="data0/tooltips/buddha.jpg" alt="buddha"/>1</span></a>
+                        <a href="#" title="himal"><span><img src="data0/tooltips/himal.jpg" alt="himal"/>2</span></a>
+                        <a href="#" title="nature"><span><img src="data0/tooltips/nature.jpg" alt="nature"/>3</span></a>
+                        <a href="#" title="rhino"><span><img src="data0/tooltips/rhino.jpg" alt="rhino"/>4</span></a>
+                        <a href="#" title="danphe"><span><img src="data0/tooltips/danphe.jpg" alt="danphe"/>5</span></a>
+                    </div>
+                </div>
+                <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">image slider</a> by WOWSlider.com v8.8
+                </div>
+                <div class="ws_shadow"></div>
+             </div>	
+         
+              <div id="state1" width="100%" height="100%">
+             	<table height="auto" width="100%">
+                	<tr>
+                    	<td width="25%"><img src="images/a.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/b.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/c.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/d.jpeg" width="250px" height="200px"/></td>
+                    </tr>
+                    <tr>
+                    	<td width="25%"><img src="images/e.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/f.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/g.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/h.jpeg" width="250px" height="200px"/></td>
+                    </tr>
+                </table>
+             
+             </div>
+              <div id="state2" width="100%" height="100%">
+             	<table height="auto" width="100%">
+                	<tr>
+                    	<td width="25%"><img src="images/e.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/f.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/g.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/h.jpeg" width="250px" height="200px"/></td>
+                    </tr>
+                    <tr>
+                    	<td width="25%"><img src="images/i.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/j.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/k.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/l.jpeg" width="250px" height="200px"/></td>
+                    </tr>
+                </table>
+             
+             </div>
+              <div id="state3" width="100%" height="100%">
+             	<table height="auto" width="100%">
+                	<tr>
+                    	<td width="25%"><img src="images/i.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/j.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/k.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/l.jpeg" width="250px" height="200px"/></td>
+                    </tr>
+                    <tr>
+                    	<td width="25%"><img src="images/a.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/b.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/c.jpg" width="250px" height="200px"/></td>
+                    	<td width="25%"><img src="images/d.jpeg" width="250px" height="200px"/></td>
+                    </tr>
+                </table>
+             
+             </div>
+				<script type="text/javascript" src="engine0/wowslider.js"></script>
+                <script type="text/javascript" src="engine0/script.js"></script>
+                <!-- End WOWSlider.com BODY section -->
+            </div>
+       
+            <div id="bottomdiv">
+                <div id=body_left_bottomleft>
+                   <img src="images/buddha.jpg" width="100%" height="200px"/>
+                </div>
+                <div id=body_left_bottomiddle>
+                <script type="text/Javascript">
+					function showState(){
+						document.getElementById("wowslider-container0").style.display="block";
+						document.getElementById("state1").style.display="none";
+						document.getElementById("state2").style.display="none";
+						document.getElementById("state3").style.display="none";
+						
+					}
+					function showState1(){
+						document.getElementById("wowslider-container0").style.display="none";
+						document.getElementById("state1").style.display="block";
+						document.getElementById("state2").style.display="none";
+						document.getElementById("state3").style.display="none";
+						
+						
+					}
+					function showState2(){
+						document.getElementById("wowslider-container0").style.display="none";
+						document.getElementById("state1").style.display="none";
+						document.getElementById("state2").style.display="block";
+						document.getElementById("state3").style.display="none";
+						
+						
+					}
+					function showState3(){
+						document.getElementById("wowslider-container0").style.display="none";
+						document.getElementById("state1").style.display="none";
+						document.getElementById("state2").style.display="none";
+						document.getElementById("state3").style.display="block";
+						
+					}
+				</script>
+                    
+                       <table id="bottomtable" width="100%" height="100%">
+                        <tr>
+                            <th align="center"><p onClick="showState()">Different states of Nepal</p></th>
+                        </tr>
+                        <tr>
+                            <td align="center"><p onclick="showState1()">State No.1</p></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><p onclick="showState2()">State No.2</p></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><p onclick="showState3()">State No.3</p></td>
+                        </tr>
+                    </table>
+                </div>
+                 <div id=body_left_bottomiddle2>
+                     <table id="bottomtable" width="100%" height="100%">
+                        <tr>
+                            <td align="center">State No.4</td>
+                        </tr>
+                        <tr>
+                            <td align="center">State No.5</td>
+                        </tr>
+                        <tr>
+                            <td align="center">State No.6</td>
+                        </tr>
+                        <tr>
+                            <td align="center">State No.7</td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <div id=body_left_bottomright>
+                    <img src="images/himal.jpg" width="100%" height="200px"/>
+                </div>
+			</div>
+		
+        
+
+		</div>
+	</div>
+	
+	<div id="footerdiv">
+		<table align="center" width="100%">
+			<tr>
+				<td align="center">
+					<p> <a href="index.html">Home</a>| 
+						<a href="aboutus.html">About us</a>| 
+						<a href="gallery.html">Gallery</a>| 
+						<a href="reservation.html">Reservation</a>| 
+						<a href="contact.html">Contact Us</a><br/>
+						Copyrights all reserved @TouristManagementCommitteeNepal.<br/>2018
+					</p>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+	</body>
+	</html>

@@ -1,0 +1,502 @@
+<html>
+<head>
+	<title>Final Project</title>
+	<link rel="stylesheet" href="slider.css" type="text/css">
+	<script type="text/javascript" src="main.js"></script>
+	
+<style>
+
+body{
+
+	margin:0px;
+	padding:0px;
+	
+}
+
+#maindiv{
+
+height:800px;
+width:500 px;
+margin:auto;
+background-image: linear-gradient(skyblue, white);
+}
+
+#bannerdiv{
+	margin:auto;
+	background: url("images/mountain.jpg");
+	background-size:100%, 100%;
+	background-repeat: no-repeat;
+	height:150px;
+	width: 1000px;
+	}
+
+#banner_h1{
+	color:yellow;
+	text-align: center;
+	text-decoration: underline;
+	padding:50px;
+}
+#menudiv {
+    margin: auto;
+    height: 30px;
+    width: 1000px;
+	background-color:maroon;
+}
+	#menudiv td{
+		
+		border:1px, none;
+		border-top-left-radius: 10px;
+		background-color: maroon;
+		height:25px;
+		width:160px;
+		color: white;
+		text-align: center;
+	}
+	#menudiv td a:link{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:hover{
+		color:white;
+		text-decoration: underline;
+	}
+	#menudiv td a:visited{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:active{
+		color:red;
+		text-decoration: none;
+	}
+	.dropdown{
+		position:relative;
+		display:inline-block;
+		height: 25px;
+
+	}
+	.dropdown-menu
+	{
+		display:none;
+		position:absolute;
+		backgground-color:skyblue;
+		min-width: 160px;
+		height: 25px;
+		 z-index: 1;
+	}
+	.dropdown-menu a{
+		background-color: skyblue;
+		color:yellow;
+		text-decoration: none;
+		display: block;
+		height: 25px;
+	
+	}
+	.dropdown-menu a:hover{
+		background-color: brown;
+		color:maroon;
+		height: 25px;
+		
+	
+	}
+	.dropdown:hover .dropdown-menu{
+		display:block;
+		height: 25px;
+		
+	}
+	.dropdown:hover{
+		background-color:maroon;
+		text-decoration: none;
+		height: 25px;
+	}
+
+#tablediv{
+
+	height:30px;
+	width:1000px;
+	margin:auto;
+	//background-color:white;
+}
+
+#menu_td{
+
+	background-color: maroon;
+	border:1px none;
+	border-top-left-radius: 10px;
+	width:150px;
+	height:30px;
+	text-align: center;
+	color:white;
+}
+#tablediv td a:link{
+
+	color:white;
+	text-decoration: none;
+
+}
+#tablediv td a:hover{
+
+	color:white;
+	text-decoration: underline;
+
+}
+#tablediv td a:visited{
+
+	color:white;
+	text-decoration: none;
+
+}
+#tablediv td a:active{
+
+	color:red;
+	text-decoration: none;
+
+}
+
+#bodydiv{
+	height:auto;
+	margin:auto;
+	width:1000px;
+}
+
+#body_left{
+	height:720px;
+	float:left;
+	width:750px;
+	
+
+}
+
+#body_left_top{
+	height:480px;
+	width:90%;
+	margin:0px;
+	padding: 10px;
+	border: 5px groove white;
+	text-align:center;
+	background-image:linear-gradient(white,lightyellow);
+	
+
+
+}
+#form{
+	height:auto;
+	width:400px;
+	margin:auto;
+
+}
+#form table{
+	margin:0px;
+	padding:10px;
+	background-image: linear-gradient(lightgrey,white);
+}
+#form td{
+	color:maroon;
+}
+
+#body_left_bottomleft{
+	height:200px;
+	width:250px;
+	float:left;
+	background-color: grey;
+	//background-image: url("images/himal.jpg");
+	//background-size:250px, 200px;
+	//background-repeat: no-repeat;
+
+
+}
+
+#body_left_bottomiddle{
+	height:200px;
+	width:250px;
+	float:left;
+	//background-image: url("F:/college files/3rd sem/Final Project/images/rhino.jpg");
+	//background-size:100%, 100%;
+	//background-repeat: no-repeat;
+
+}
+
+#body_left_bottomright{
+	height:200px;
+	width:250px;
+	float:right;
+	background-color: red;
+	//background-image: url("F:/college files/3rd sem/Final Project/images/buddha.jpg");
+	//background-size:250px, 200px;
+	//background-repeat: no-repeat;
+
+
+}
+#body_right{
+
+height:720px;
+}
+
+	#body_right_top{
+	height:210px;
+	float:right;
+	width:248px;
+	background-image: linear-gradient(skyblue,white);
+	margin-bottom: 1px;
+	
+}
+#body_right_top td{
+	background-color: maroon;
+	text-align:center;
+	height:40px;
+}
+		#body_right_top td a:link{
+			color:white;
+			text-align:center;
+			text-decoration:none;
+		}
+		#body_right_top td a:hover{
+			color:white;
+			text-decoration:none;
+		}
+		#body_right_top td a:visited{
+			color:white;
+			text-decoration:none;
+		}
+		#body_right_top td a:active{
+			color:white;
+			text-decoration:none;
+		}
+
+#body_right_bottom{
+	height:500px;
+	float:right;
+	width:248px;
+	background-image:linear-gradient(white,skyblue);
+	margin-top: 1px;
+}
+
+
+#table_form{
+	height:180px;
+	width: 200px;
+	margin: 10px;
+	background-image: linear-gradient(lightgrey,white,lightgrey);
+	
+	padding:5px;
+	color:maroon;
+
+}
+
+#table_form a:link {
+
+	color: maroon;
+}
+
+#table_form a:hover {
+
+	color: blue;
+}
+
+#footerdiv{
+	height:100px;
+	width:1000px;
+	margin:auto;
+	background-color: maroon;
+}
+
+#footerdiv td{
+	padding:10px;
+	color:white;
+}
+
+#footerdiv a:link {
+
+	color: white;
+}
+
+#footerdiv a:hover {
+
+	color: blue;
+}
+
+#footerdiv a:visited {
+
+	color: white;
+}
+
+#footerdiv a:active {
+
+	color: red;
+}
+
+
+</style>
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section --></head>
+
+
+
+<body>
+<div id=maindiv>
+
+	<div id=bannerdiv>
+	  <h1 id="banner_h1">Students Scores</h1>
+	</div>
+	<div id=menudiv>
+			<table align="right">
+				<tr>
+					<td ><a href="index.html">Home</a></td>
+					<td ><a href="intro.html">Introduction</a></td>
+					<td><a href="score.html">About Us</a></td>
+					<td><a href="gallery.html">Gallery</a></td>
+					<td><a href="anime.html">Animation</a></td>
+					 <td class="dropdown">
+				  Lessons
+					<div class="dropdown-menu">
+			  <a href="lesson.html">Lesson 1</a>
+				<a href="lesson2.html">Lesson 2</a>
+				<a href="lesson3.html">Lesson 3</a>
+			  </div>
+				  </td>
+					
+				</tr>
+			</table>
+
+	</div>
+		
+	<div id=bodydiv>
+		<div id=body_left> 
+
+			<div id=body_left_top>
+				<script type="text/javascript">
+		var names=["Sajan","Amrita","Sanjay","Kiran","Rabi","Bisuta"]; //Array for name of students
+		var score=[88, 93, 92, 91,86,78];							// Array for score obtained by students 
+		
+		var total= score[0]+score[1]+score[2]+score[3]+score[4]+score[5]; // Calculate the total of scores obtained by the all students
+		var average=total/(score.length);									// Calculate the Average of the scores obtained by the students
+		document.write("The total score of the students is: "+total+"<br/>"); // show the total score of students
+		document.write("The average score of the whole students is : "+average+"<br/>"); // show the average score of students
+		
+		
+		// Coding To show the name of all students with their corresponding scores.
+		var str="";
+		document.write("<br/><b>There are "+names.length+" students in the class. Their details with score obtained are as follows: </b><br/>")
+		
+		for ( var i=0; i<6; i++)
+		{
+			str=names[i]+ " : "+score[i]+"<br/>";
+			document.write(str);
+		}
+		
+		
+		
+		// Coding to show the name of students who obtained score over 90.
+		
+		document.write("<br/><b>The students who obtained score over 90 are as follows:</b><br/>");
+		for (var i=0;i<6;i++)
+		{
+			if (score[i]>=90)
+			{
+				str=names[i]+ " : "+score[i]+"<br/>";
+				document.write(str);
+			
+			}	
+		
+		}
+		
+		
+		//Coding to show the name of students and score obtained by them in descending order of score.
+		var text="";
+		document.write("<br/><b>The list of students according to the score obtained in descending order is:</b><br/> ")
+		for (i=0;i<score.length;i++)
+		{
+			for (j=i+1;j<score.length;j++)
+			{
+				if (score[i]<score[j])
+				{
+					w=score[i];
+					n=names[i];
+					score[i]=score[j];
+					names[i]=names[j];
+					score[j]=w;
+					names[j]=n;
+								
+					
+
+				}			
+			}		
+		}		
+		for (i=0;i<score.length;i++)
+		{
+			document.write(names[i]+" : "+score[i]+"<br>");
+		}
+		
+		
+	
+	
+	
+	</script>
+
+			</div>
+
+			<div id=body_left_bottomleft>
+				<img src="images/rhino.jpg" width="250px" height="200px"/>
+			</div>
+			<div id=body_left_bottomiddle>
+				<img src="images/buddha.jpg" width="250px" height="200px"/>
+			</div>
+
+			<div id=body_left_bottomright>
+				<img src="images/himal.jpg" width="250px" height="200px"/>
+			</div>
+
+
+
+		</div>
+		<div id=body_right>
+		<div id=body_right_top>
+						<table width="248px" height="200px">
+				<tr>
+					<td><a href="shop.html"><img src="shop.jpg" width="20px" height="20px"/> Go to my shop</a></td>
+				</tr>
+				<tr>
+					<td><a href="score.html"><img src="score.jpg" width="20px" height="20px"/>  &nbsp;See the scores</a></td>
+				</tr>
+				<tr>
+					<td><a href="jsworld.html"><img src="js.png" width="20px" height="20px"/> &nbsp;Go to JS world</a></td>
+				</tr>
+				<tr>
+					<td><a href="form.html"><img src="form.jpg" width="20px" height="20px"/> &nbsp;Fill up the form</a></td>
+				</tr>
+				<tr>
+					<td><a href="map.html"><img src="map.jpg" width="20px" height="20px"/> &nbsp;Go around globe</a></td>
+				</tr>
+			</table>
+
+		</div>
+	
+		<div id=body_right_bottom> </div>
+
+		</div>
+	
+
+</div>
+<div id="footerdiv">
+	<table align="center">
+		<tr>
+			<td align="center">
+				<p> <a href="index.html">Home</a>| 
+					<a href="aboutus.html">About us</a>| 
+					<a href="gallery.html">Gallery</a>| 
+					<a href="reservation.html">Reservation</a>| 
+					<a href="contact.html">Contact Us</a><br/>
+			Copyrights all reserved @TouristManagementCommitteeNepal.<br/>2018</p>
+			</td>
+		</tr>
+	</table>
+
+</div>
+</div>
+
+</body>
+
+
+</html>

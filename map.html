@@ -1,0 +1,533 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<style>
+		body{
+			margin:0px;
+			padding:0px;
+			background-image:linear-gradient(skyblue,white);
+			height:1000px;
+		}
+		#bannerdiv{
+	margin:auto;
+	background: url("images/mountain.jpg");
+	background-size:100%, 100%;
+	background-repeat: no-repeat;
+	height:150px;
+	width: 1000px;
+	}
+		#bannerdiv h1{
+		color:yellow;
+		padding:50px;
+		text-decoration:underline;
+		text-align:center;
+		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		}
+		
+		#bodydiv{
+		margin:auto;
+		width:1000px;
+		height:600px;
+		background-image:linear-gradient(white,skyblue);
+		}
+		
+		#menudiv {
+    margin: auto;
+    height: 30px;
+    width: 1000px;
+	background-color:maroon;
+}
+	#menudiv td{
+		
+		border:1px, none;
+		border-top-left-radius: 10px;
+		background-color: maroon;
+		height:25px;
+		width:160px;
+		color: white;
+		text-align: center;
+	}
+	#menudiv td a:link{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:hover{
+		color:white;
+		text-decoration: underline;
+	}
+	#menudiv td a:visited{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:active{
+		color:red;
+		text-decoration: none;
+	}
+	.dropdown{
+		position:relative;
+		display:inline-block;
+		height: 25px;
+
+	}
+	.dropdown-menu
+	{
+		display:none;
+		position:absolute;
+		backgground-color:skyblue;
+		min-width: 160px;
+		height: 25px;
+		 z-index: 1;
+	}
+	.dropdown-menu a{
+		background-color: skyblue;
+		color:yellow;
+		text-decoration: none;
+		display: block;
+		height: 25px;
+	
+	}
+	.dropdown-menu a:hover{
+		background-color: brown;
+		color:maroon;
+		height: 25px;
+		
+	
+	}
+	.dropdown:hover .dropdown-menu{
+		display:block;
+		height: 25px;
+		
+	}
+	.dropdown:hover{
+		background-color:maroon;
+		text-decoration: none;
+		height: 25px;
+	}
+
+		
+		#mymap{ 
+			width: 75%;
+			height: 400px;
+			float:left;
+			border:groove 5px lightyellow;
+		}
+			#namediv{
+				
+				height:400px;
+				width:20%;
+				float:right;
+			}
+			
+			#namediv table{
+				
+				width:100%;			
+			}
+			
+			#namediv td {
+				text-align: center;
+				background-color:maroon;
+				height:50px;
+				color:white;
+			}
+
+			#footerdiv{
+				height:100px;
+				width:1000px;
+				margin:auto;
+				background-color: maroon;
+			}
+
+			#footerdiv td{
+				padding:10px;
+				color:white;
+			}
+
+			#footerdiv a:link, #body_right_top a:link{
+
+				color: white;
+				text-decoration:none;
+			}
+
+			#footerdiv a:hover, #body_right_top a:hover {
+
+				color: yellow;
+			}
+
+			#footerdiv a:visited, #body_right_top a:visited {
+
+				color: white;
+			}
+
+			#footerdiv a:active, #body_right_top a:active {
+
+				color: red;
+			}
+
+
+		</style>
+		<title>Final Project</title>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>	
+<script>
+	function initialize(){
+		var map = new google.maps.Map( document.getElementById('mymap'), {
+			zoom: 1,
+			center: {lat: 27.9757642, lng:84.2654707},
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	function initialize1(){
+				var opt = {
+					zoom: 3,
+					center: new google.maps.LatLng(27.9757642,84.2654707),
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var mm = document.getElementById("mymap");
+				map = new google.maps.Map(mm, opt);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(27.9757642,84.2654707),
+					map: map,
+					title: "My hometown"
+				});
+				var marker1 = new google.maps.Marker({
+					position: new google.maps.LatLng(27.2099899,86.9594579),
+					map: map,
+					title: "Annapurna Himalaya"
+				});
+				var marker2 = new google.maps.Marker({
+					position: new google.maps.LatLng(28.6984833,83.4785948),
+					map: map,
+					title: "Dhaulagiri Himalaya"
+				});
+					var marker3 = new google.maps.Marker({
+					position: new google.maps.LatLng(35.0062205,135.690909),
+					map: map,
+					title: "Kyoto"
+				});
+				var info = new google.maps.InfoWindow({
+				content: "This is my birthplace"+"<br/>"+"<img src='images/damauli.jpg' height='150px' width='150px'/>"
+				});
+					var info1 = new google.maps.InfoWindow({
+				content: "<img src='images/annapurna.jpg' height='100px' width='150px'/>"
+				});
+					var info2 = new google.maps.InfoWindow({
+				content:"<img src='images/dhaulagiri.jpg' height='100px' width='150px'/>"
+				});
+					var info3 = new google.maps.InfoWindow({
+				content: "<img src='images/kyoto.jpg' height='100px' width='150px'/>"
+				});
+				google.maps.event.addListener(marker, "click", function(){info.open(map,marker);});
+				google.maps.event.addListener(marker1, "click", function(){info1.open(map,marker1);});
+				google.maps.event.addListener(marker2, "click", function(){info2.open(map,marker2);});
+				google.maps.event.addListener(marker3, "click", function(){info3.open(map,marker3);});
+				
+				}
+				function initialize2(){
+				var opt = {
+					zoom: 7,
+					center: new google.maps.LatLng(27.7090107,85.2895668),
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var mm = document.getElementById("mymap");
+				map = new google.maps.Map(mm, opt);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(27.7090107,85.2895668),
+					map: map,
+					title: "Kathmandu"
+				});
+				var marker1 = new google.maps.Marker({
+					position: new google.maps.LatLng(28.2299535,83.816529),
+					map: map,
+					title: "Pokhara"
+				});
+				var marker2 = new google.maps.Marker({
+					position: new google.maps.LatLng(27.9881388,86.9162203),
+					map: map,
+					title: "Mount Everest"
+				});
+					var marker3 = new google.maps.Marker({
+					position: new google.maps.LatLng(27.802585,83.0006283),
+					map: map,
+					title: "Lumbini-Birth place of Buddha"
+				});
+				var info = new google.maps.InfoWindow({
+				content: "This is our capital city"+"<br/>"+"<img src='images/kathmandu.jpg' height='150px' width='150px'/>"
+				});
+					var info1 = new google.maps.InfoWindow({
+				content: "This is a wonderful place to visit"+"<br/>"+"<img src='images/pokhara.jpg' height='100px' width='150px'/>"
+				});
+					var info2 = new google.maps.InfoWindow({
+				content:"This is the highest peak on earth"+"<br/>"+"<img src='images/everest.jpg' height='100px' width='150px'/>"
+				});
+					var info3 = new google.maps.InfoWindow({
+				content: "Buddha was born in this city"+"<br/>"+"<img src='images/buddha.jpg' height='100px' width='150px'/>"
+				});
+				google.maps.event.addListener(marker, "click", function(){info.open(map,marker);});
+				google.maps.event.addListener(marker1, "click", function(){info1.open(map,marker1);});
+				google.maps.event.addListener(marker2, "click", function(){info2.open(map,marker2);});
+				google.maps.event.addListener(marker3, "click", function(){info3.open(map,marker3);});
+				
+				}
+				function initialize3(){
+				var opt = {
+					zoom: 2.5,
+					center: new google.maps.LatLng(17.41209,-0.9723454),
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var mm = document.getElementById("mymap");
+				map = new google.maps.Map(mm, opt);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(17.41209,-0.9723454),
+					map: map,
+					title: "Nigeria"
+				});
+				var marker1 = new google.maps.Marker({
+					position: new google.maps.LatLng(15.6202711,21.19905),
+					map: map,
+					title: "Sudan"
+				});
+				var marker2 = new google.maps.Marker({
+					position: new google.maps.LatLng(26.8446656,26.3784975),
+					map: map,
+					title: "Egypt"
+				});
+					var marker3 = new google.maps.Marker({
+					position: new google.maps.LatLng(-22.6904187,9.3243641),
+					map: map,
+					title: "Nambia"
+				});
+				var info = new google.maps.InfoWindow({
+				content: "<img src='images/nigeria.jpg' height='150px' width='150px'/>"
+				});
+					var info1 = new google.maps.InfoWindow({
+				content: "<img src='images/sudan.jpg' height='100px' width='150px'/>"
+				});
+					var info2 = new google.maps.InfoWindow({
+				content:"<img src='images/egypt.jpg' height='100px' width='150px'/>"
+				});
+					var info3 = new google.maps.InfoWindow({
+				content:"<img src='images/nambia.jpg' height='100px' width='150px'/>"
+				});
+				google.maps.event.addListener(marker, "click", function(){info.open(map,marker);});
+				google.maps.event.addListener(marker1, "click", function(){info1.open(map,marker1);});
+				google.maps.event.addListener(marker2, "click", function(){info2.open(map,marker2);});
+				google.maps.event.addListener(marker3, "click", function(){info3.open(map,marker3);});
+				
+				}
+				function initialize4(){
+				var opt = {
+					zoom: 4.5,
+					center: new google.maps.LatLng(48.2208286,16.2399738),
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var mm = document.getElementById("mymap");
+				map = new google.maps.Map(mm, opt);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(51.5287352,-0.3817889),
+					map: map,
+					title: "London"
+				});
+				var marker1 = new google.maps.Marker({
+					position: new google.maps.LatLng(52.2330269,20.7810045),
+					map: map,
+					title: "Warsaw"
+				});
+				var marker2 = new google.maps.Marker({
+					position: new google.maps.LatLng(48.2208286,16.2399738),
+					map: map,
+					title: "Vienna"
+				});
+					var marker3 = new google.maps.Marker({
+					position: new google.maps.LatLng(41.9102416,12.2558002),
+					map: map,
+					title: "Rome"
+				});
+				var info = new google.maps.InfoWindow({
+				content:"<img src='images/london.jpg' height='150px' width='150px'/>"
+				});
+					var info1 = new google.maps.InfoWindow({
+				content: "<img src='images/warsaw.jpg' height='100px' width='150px'/>"
+				});
+					var info2 = new google.maps.InfoWindow({
+				content:"<img src='images/vienna.jpg' height='100px' width='150px'/>"
+				});
+					var info3 = new google.maps.InfoWindow({
+				content: "<img src='images/rome.jpg' height='100px' width='150px'/>"
+				});
+				google.maps.event.addListener(marker, "click", function(){info.open(map,marker);});
+				google.maps.event.addListener(marker1, "click", function(){info1.open(map,marker1);});
+				google.maps.event.addListener(marker2, "click", function(){info2.open(map,marker2);});
+				google.maps.event.addListener(marker3, "click", function(){info3.open(map,marker3);});
+				
+				}
+				function initialize5(){
+				var opt = {
+					zoom: 4,
+					center: new google.maps.LatLng(-25.2966809,-57.6681302),
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var mm = document.getElementById("mymap");
+				map = new google.maps.Map(mm, opt);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(-12.9012521,-38.5598977),
+					map: map,
+					title: "Salvador"
+				});
+				var marker1 = new google.maps.Marker({
+					position: new google.maps.LatLng(-12.0551637,-77.0802425),
+					map: map,
+					title: "Peru"
+				});
+				var marker2 = new google.maps.Marker({
+					position: new google.maps.LatLng(-25.2966809,-57.6681302),
+					map: map,
+					title: "Paraguay"
+				});
+					var marker3 = new google.maps.Marker({
+					position: new google.maps.LatLng(6.5967067,-75.678158),
+					map: map,
+					title: "Venezuela"
+				});
+				var info = new google.maps.InfoWindow({
+				content: "<img src='images/salvador.jpg' height='150px' width='150px'/>"
+				});
+					var info1 = new google.maps.InfoWindow({
+				content:"<img src='images/peru.jpg' height='100px' width='150px'/>"
+				});
+					var info2 = new google.maps.InfoWindow({
+				content:"<img src='images/paraguay.jpg' height='100px' width='150px'/>"
+				});
+					var info3 = new google.maps.InfoWindow({
+				content: "<img src='images/venezuela.jpg' height='100px' width='150px'/>"
+				});
+				google.maps.event.addListener(marker, "click", function(){info.open(map,marker);});
+				google.maps.event.addListener(marker1, "click", function(){info1.open(map,marker1);});
+				google.maps.event.addListener(marker2, "click", function(){info2.open(map,marker2);});
+				google.maps.event.addListener(marker3, "click", function(){info3.open(map,marker3);});
+				
+				}
+				function initialize6(){
+				var opt = {
+					zoom: 3.5,
+					center: new google.maps.LatLng(35.2928018,-100.9610229),
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var mm = document.getElementById("mymap");
+				map = new google.maps.Map(mm, opt);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(35.2928018,-100.9610229),
+					map: map,
+					title: "Oklahoma"
+				});
+				var marker1 = new google.maps.Marker({
+					position: new google.maps.LatLng(47.2548175,-123.1258924),
+					map: map,
+					title: "Washington"
+				});
+				var marker2 = new google.maps.Marker({
+					position: new google.maps.LatLng(41.8339042,-88.0121617),
+					map: map,
+					title: "Chicago"
+				});
+					var marker3 = new google.maps.Marker({
+					position: new google.maps.LatLng(47.4497125,-102.545866),
+					map: map,
+					title: "North Dakota"
+				});
+				var info = new google.maps.InfoWindow({
+				content: "<img src='images/oklahoma.jpg' height='150px' width='150px'/>"
+				});
+					var info1 = new google.maps.InfoWindow({
+				content:"<img src='images/washington.jpg' height='100px' width='150px'/>"
+				});
+					var info2 = new google.maps.InfoWindow({
+				content:"<img src='images/chicago.jpg' height='100px' width='150px'/>"
+				});
+					var info3 = new google.maps.InfoWindow({
+				content: "<img src='images/northdakota.jpg' height='100px' width='150px'/>"
+				});
+				google.maps.event.addListener(marker, "click", function(){info.open(map,marker);});
+				google.maps.event.addListener(marker1, "click", function(){info1.open(map,marker1);});
+				google.maps.event.addListener(marker2, "click", function(){info2.open(map,marker2);});
+				google.maps.event.addListener(marker3, "click", function(){info3.open(map,marker3);});
+				
+				}
+			
+
+</script>
+</head>
+<body>
+<div id="bannerdiv"> <h1>Travel around the globe</h1></div>
+	<div id=menudiv>
+		<table align="right">
+			<tr>
+				<td ><a href="index.html">Home</a></td>
+				<td ><a href="intro.html">Introduction</a></td>
+				<td><a href="aboutus.html">About Us</a></td>
+				<td><a href="gallery.html">Gallery</a></td>
+				<td><a href="bookings.html">Reservation</a></td>
+				 <td class="dropdown">
+			  Lessons
+				<div class="dropdown-menu">
+			  <a href="lesson.html">Lesson 1</a>
+				<a href="lesson2.html">Lesson 2</a>
+				<a href="lesson3.html">Lesson 3</a>
+			  </div>
+			  </td>
+				
+			</tr>
+		</table>
+
+	</div>
+
+<div id="bodydiv">
+	<div id="mymap"></div>
+	<div id="namediv">
+	<table align="right">
+		<tr>
+		<td onClick="initialize2()">Nepal</td>
+		</tr
+		><tr>
+		<td onClick="initialize1()">Asia</td>
+		</tr>
+		<tr>
+		<td onClick="initialize3()">Africa</td>
+		</tr>
+		<tr>
+		<td onClick="initialize4()">Europe</td>
+		</tr>
+		<tr>
+		<td onClick="initialize5()">S.America</td>
+		</tr>
+		<tr>
+		<td onClick="initialize6()">N.America</td>
+	</tr>
+	</table>
+
+	</div>
+</div>
+<div id="footerdiv">
+	<table align="center">
+		<tr>
+			<td align="center">
+				<p> <a href="index.html">Home</a>| 
+					<a href="aboutus.html">About us</a>| 
+					<a href="gallery.html">Gallery</a>| 
+					<a href="reservation.html">Reservation</a>| 
+					<a href="contact.html">Contact Us</a><br/>
+			Copyrights all reserved @TouristManagementCommitteeNepal.<br/>2018</p>
+			</td>
+		</tr>
+	</table>
+
+</div>
+	
+</body>
+</html>
+
+
+

@@ -1,0 +1,228 @@
+<html>
+<head>
+	<title>Final Project</title>
+	<link rel="stylesheet" href="slider.css" type="text/css">
+	<script type="text/javascript" src="main.js"></script>
+<link type="text/css" rel="stylesheet" href="css/main.css"/>	
+<style>
+	  #train {
+      position:relative;
+      cursor: pointer;
+	  height:100px;
+	  width:150px;
+    }
+	
+#body_right_top img:hover{
+	border:2px solid red;
+}
+
+#container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: red;
+}
+
+
+</style>
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+	<script>
+		function myMove() {
+			  var elem = document.getElementById("animate");   
+			  var pos =0;
+			  var id = setInterval(frame, 5);
+			  function frame() {
+				if (pos == 180) {
+				  clearInterval(id);
+				} else {
+				  pos++; 
+				  elem.style.top = pos + "px"; 
+				  elem.style.bottom = pos + "px"; 
+				}
+			  }
+			}
+			function Moveback() {
+			  var elem = document.getElementById("animate");   
+			  var pos =0;
+			  var id = setInterval(frame, 5);
+			  function frame() {
+				if (pos == 180) {
+				  clearInterval(id);
+				} else {
+				  pos++; 
+				  elem.style.bottom = pos + "px"; 
+				  elem.style.right = pos +"px"; 
+				}
+			  }
+			}
+			function Moveback1() {
+			  var elem = document.getElementById("animate");   
+			  var pos =0;
+			  var id = setInterval(frame, 5);
+			  function frame() {
+				if (pos == 180) {
+				  clearInterval(id);
+				} else {
+				  pos++; 
+				  elem.style.bottom = pos + "px"; 
+				  elem.style.left = pos +"px"; 
+				}
+			  }
+			}
+			function Moveback2() {
+			  var elem = document.getElementById("animate");   
+			  var pos =0;
+			  var id = setInterval(frame, 5);
+			  function frame() {
+				if (pos == 180) {
+				  clearInterval(id);
+				} else {
+				  pos++; 
+				  elem.style.top = pos + "px"; 
+				  elem.style.left = pos +"px"; 
+				}
+			  }
+			}
+	</script>
+</head>
+
+
+
+<body>
+<div id=maindiv>
+
+	<div id=bannerdiv>
+	  <h1 id="banner_h1">Introduction</h1>
+	</div>
+	<div id=menudiv>
+			<table align="right">
+				<tr>
+					<td ><a href="index.html">Home</a></td>
+					<td ><a href="intro.html">Introduction</a></td>
+					<td><a href="aboutus.html">About Us</a></td>
+					<td><a href="gallery.html">Gallery</a></td>
+					<td><a href="bookings.html">Reservation</a></td>
+				 <td class="dropdown">
+				  Lessons
+				<div class="dropdown-menu">
+			  <a href="lesson.html">Lesson 1</a>
+				<a href="lesson2.html">Lesson 2</a>
+				<a href="lesson3.html">Lesson 3</a>
+			  </div>
+				  </td>
+					
+				</tr>
+			</table>
+
+	</div>
+		
+	<div id=bodydiv>
+		<div id=body_left> 
+
+			<div id=body_left_top>
+			<p>Click on the image to move the train</p>
+				<img id="train" src="https://js.cx/clipart/train.gif">
+
+
+  <script>
+    train.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+		
+        train.style.left = timePassed / 4  + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+  <p>Click on the buttons to move the red box</p>
+<p>
+
+<button onClick="Moveback()">Click Me</button>
+<button onClick="myMove()">Click Me</button>
+<button onClick="Moveback1()">Click Me</button>
+<button onClick="Moveback2()">Click Me</button>
+
+</p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+				
+			</div>
+
+			<div id=body_left_bottomleft>
+				<img src="images/rhino.jpg" width="250px" height="200px"/>
+			</div>
+			<div id=body_left_bottomiddle>
+				<img src="images/buddha.jpg" width="250px" height="200px"/>
+			</div>
+
+			<div id=body_left_bottomright>
+				<img src="images/himal.jpg" width="250px" height="200px"/>
+			</div>
+
+
+
+		</div>
+		<div id=body_right>
+		<div id=body_right_top>
+						<table width="248px" height="200px">
+				<tr>
+					<td><a href="shop.html"><img src="shop.jpg" width="20px" height="20px"/> Go to my shop</a></td>
+				</tr>
+				<tr>
+					<td><a href="score.html"><img src="score.jpg" width="20px" height="20px"/>  &nbsp;See the scores</a></td>
+				</tr>
+				<tr>
+					<td><a href="jsworld.html"><img src="js.png" width="20px" height="20px"/> &nbsp;Go to JS world</a></td>
+				</tr>
+				<tr>
+					<td><a href="form.html"><img src="form.jpg" width="20px" height="20px"/> &nbsp;Fill up the form</a></td>
+				</tr>
+				<tr>
+					<td><a href="map.html"><img src="map.jpg" width="20px" height="20px"/> &nbsp;Go around globe</a></td>
+				</tr>
+			</table>
+
+		</div>
+	
+		<div id=body_right_bottom> </div>
+
+		</div>
+	
+
+</div>
+<div id="footerdiv">
+	<table align="center">
+		<tr>
+			<td align="center">
+				<p> <a href="index.html">Home</a>| 
+					<a href="aboutus.html">About us</a>| 
+					<a href="gallery.html">Gallery</a>| 
+					<a href="reservation.html">Reservation</a>| 
+					<a href="contact.html">Contact Us</a><br/>
+			Copyrights all reserved @TouristManagementCommitteeNepal.<br/>2018</p>
+			</td>
+		</tr>
+	</table>
+
+</div>
+</div>
+
+</body>
+
+
+</html>

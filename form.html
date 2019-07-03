@@ -1,0 +1,229 @@
+<html>
+<head>
+	<title>Final Project</title>
+	<link rel="stylesheet" href="slider.css" type="text/css">
+	<script type="text/javascript" src="main.js"></script>
+	
+<link href="css/intro.css" type="text/css" rel="stylesheet"/>
+<link href="css/main.css" type="text/css" rel="stylesheet"/>
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section --></head>
+
+
+
+<body>
+<div id=maindiv>
+
+	<div id=bannerdiv>
+	 
+	</div>
+<div id=menudiv>
+		<table align="right">
+			<tr>
+				<td ><a href="index.html">Home</a></td>
+				<td ><a href="intro.html">Introduction</a></td>
+				<td><a href="aboutus.html">About Us</a></td>
+				<td><a href="gallery.html">Gallery</a></td>
+				<td><a href="bookings.html">Reservation</a></td>
+				 <td class="dropdown">
+			  Lessons
+			<div class="dropdown-menu">
+			  <a href="lesson.html">Lesson 1</a>
+				<a href="lesson2.html">Lesson 2</a>
+				<a href="lesson3.html">Lesson 3</a>
+			  </div>
+			  </td>
+				
+			</tr>
+		</table>
+
+	</div>
+	
+	<div id=bodydiv>
+		<div id=body_left> 
+
+			<div id=body_left_top>
+				<form id="form" name="form" onSubmit="return checkForm(this);">
+					<table>
+						<tr>
+							<td colspan="2"><h3>Fill up the form please</h3></td>
+						</tr>
+						<tr>
+							<td>Firstname: </td>
+							<td><input type="text" name="fname" value=""/></td>
+
+						</tr>
+						<tr>
+							<td>Lastname: </td>
+							<td><input type="text" name="lname" value=""/></td>
+
+						</tr>
+						<tr>
+							<td>Username: </td>
+							<td><input type="text" name="userid" value=""/></td>
+
+						</tr>
+						<tr>
+							<td>Password: </td>
+							<td><input type="password" name="password" value=""/></td>
+
+						</tr>
+						<tr>
+							<td>Nationality: </td>
+							<td>
+								<select>
+									<option>Select your Nationality</option>
+									<option name="nationality">Nepali</option>
+									<option name="nationality">Indian</option>
+									<option name="nationality">American</option>
+									<option name="nationality">Japanese</option>
+									<option name="nationality">Chinese</option>
+									<option name="nationality">Korean</option>
+									<option name="nationality">Srilankan</option>					
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Gender: </td>
+							<td>
+								<input type="radio" name="gender" value="Male">Male
+								<input type="radio" name="gender" value="Female">Female
+								<input type="radio" name="gender" value="others">Prefer not to say			
+							</td>
+						</tr>
+						<tr>
+							<td>Adderss:</td>
+							<td><textarea rows="5" cols="50" name="address"></textarea></td>
+						</tr>
+						<tr>
+							<td>Email-ID:</td>
+							<td><input type="text" value="" name="email"></td>
+						</tr>
+						<tr>
+							<td>Contact No:</td>
+							<td><input type="text" value="" name="contact"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" value="submit" name="submit"></td>
+							<td><input type="reset" value="reset" name="reset"></td>
+						</tr>
+
+
+					</table>
+				</form>
+				<script type="text/javascript">
+					function checkForm(form)
+					{
+						var errors=[];
+						if(form.fname.value==""){
+						errors.push("You must enter your first name!");
+						}
+						
+						var re=/^[\w]+$/;
+						
+						if (!re.test(form.fname.value) || !re.test(form.lname.value)){
+							errors.push("Input contains invalid characters");
+						}
+						
+						if(form.lname.value==""){
+						errors.push("You must enter your Last name!");
+						}
+						if(form.userid.value==""){
+						errors.push("You forgot to enter your userID!");
+						}
+						if(form.password.value==""){
+							errors.push("Password is empty!");
+						}
+						if(form.gender.value==""){
+							errors.push("You did not choose any gender!");
+						}
+						var mail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+						if(form.email.value==""){
+							errors.push("Please enter your email address");
+						}
+						else if (!mail.test(form.email.value)){
+							errors.push("You entered an invalid email address");
+						}
+						var match=/^[0-9]+$/;
+						if (form.contact.value==""){
+							errors.push("Please enter the Phone number");
+						}
+						else if(!match.test(form.contact.value)){
+							errors.push("You entered an invalid Phone format");
+						}
+						if (errors.length>0){
+						 var msg="ERRORS:\n";
+						 for(var i=0; i<errors.length; i++){
+							msg+=errors[i]+"\n";
+						 }
+						 alert(msg);
+						 return false;
+						}
+					}
+				</script>
+			</div>
+
+			<div id=body_left_bottomleft>
+				<img src="images/rhino.jpg" width="250px" height="200px"/>
+			</div>
+			<div id=body_left_bottomiddle>
+				<img src="images/buddha.jpg" width="250px" height="200px"/>
+			</div>
+
+			<div id=body_left_bottomright>
+				<img src="images/himal.jpg" width="250px" height="200px"/>
+			</div>
+
+
+
+		</div>
+		<div id=body_right_top>
+						<table width="248px" height="200px">
+				<tr>
+					<td><a href="shop.html"><img src="shop.jpg" width="20px" height="20px"/> Go to my shop</a></td>
+				</tr>
+				<tr>
+					<td><a href="score.html"><img src="score.jpg" width="20px" height="20px"/>  &nbsp;See the scores</a></td>
+				</tr>
+				<tr>
+					<td><a href="jsworld.html"><img src="js.png" width="20px" height="20px"/> &nbsp;Go to JS world</a></td>
+				</tr>
+				<tr>
+					<td><a href="form.html"><img src="form.jpg" width="20px" height="20px"/> &nbsp;Fill up the form</a></td>
+				</tr>
+				<tr>
+					<td><a href="map.html"><img src="map.jpg" width="20px" height="20px"/> &nbsp;Go around globe</a></td>
+				</tr>
+			</table>
+
+		</div>
+	
+		<div id=body_right_bottom> </div>
+
+	</div>
+	
+
+</div>
+<div id="footerdiv">
+	<table align="center">
+		<tr>
+			<td align="center">
+				<p> <a href="index.html">Home</a>| 
+					<a href="aboutus.html">About us</a>| 
+					<a href="gallery.html">Gallery</a>| 
+					<a href="reservation.html">Reservation</a>| 
+					<a href="contact.html">Contact Us</a><br/>
+			Copyrights all reserved @TouristManagementCommitteeNepal.<br/>2018</p>
+			</td>
+		</tr>
+	</table>
+
+</div>
+
+
+</body>
+
+
+</html>
