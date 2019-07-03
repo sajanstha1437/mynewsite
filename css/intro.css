@@ -1,0 +1,23 @@
+	@charset "utf-8";
+	/* CSS Document */
+	
+	#abbreviate {
+		display:none;
+	}
+		#abbreviate1 {
+			display:none;
+		}
+		#readmorearea {
+		
+			
+			display:none;
+			
+		}
+		#programming{
+			
+			display:none;
+		}
+	img:hover{
+		border:2px solid red;
+	}
+

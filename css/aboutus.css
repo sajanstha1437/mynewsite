@@ -1,0 +1,66 @@
+	@charset "utf-8";
+	/* CSS Document */
+	
+	#abbreviate {
+		display:none;
+	}
+		#abbreviate1 {
+			display:none;
+		}
+		#readmorearea {
+			
+			display:none;
+			
+		}
+		#programming{
+			
+			display:none;
+		}
+	img:hover{
+		border:2px solid red;
+	}
+	
+
+	
+	/*#maindiv{
+	
+	height:800px;
+	width:500 px;
+	margin:auto;
+	background-image:url('../images/background.jpg');
+		background-position:auto;
+		}*/
+	#tablediv{
+	
+		height:30px;
+		width:1000px;
+		margin:auto;
+		//background-color:white;
+	}
+	
+	#menu_td{
+	
+		background-color: maroon;
+		border:1px none;
+		border-top-left-radius: 10px;
+		width:150px;
+		height:30px;
+		text-align: center;
+		color:white;
+	}
+	.explore{
+	color:red;
+	}
+	
+	
+	#desc_table{
+		text-align:center;
+	}
+		#desc_table a:link{
+			color:#000000;
+			text-decoration:none;
+		}
+		#desc_table a:hover{
+			color:red;
+			text-decoration:underline;
+		}
