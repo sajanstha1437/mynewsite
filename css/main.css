@@ -1,0 +1,335 @@
+	body{
+	
+		margin:0px;
+		padding:0px;
+		background-image:url('../images/background.jpg');
+		
+	}
+	
+	/*#maindiv{
+	
+		height:auto;
+		width:100%;
+		margin:auto;
+		
+		background-repeat:repeat-y;
+		
+		background-position:auto;
+	}*/
+	
+	#bannerdiv{
+		margin:auto;
+		background: url("../images/visitnepal2020.png");
+	
+		background-size:100%, 100%;
+		background-repeat: no-repeat;
+		height:200px;
+		width: 80%;
+		}
+	
+	#banner_h1{
+		color:yellow;
+		text-decoration: underline;
+	}
+	
+	
+	#menudiv {
+		margin: auto;
+		height: 30px;
+		width: 80%;
+		background-color:blue;
+	}
+	#menudiv td{
+		
+		border:1px, none;
+		border-top-left-radius: 10px;
+		background-color: maroon;
+		height:25px;
+		width:160px;
+		color: white;
+		text-align: center;
+		font-size:16px;
+	}
+	#menudiv td a:link{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:hover{
+		color:white;
+		text-decoration: underline;
+	}
+	#menudiv td a:visited{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:active{
+		color:red;
+		text-decoration: none;
+	}
+	.dropdown{
+		position:relative;
+		display:inline-block;
+		height: 25px;
+
+	}
+	.dropdown-menu
+	{
+		display:none;
+		position:absolute;
+		backgground-color:skyblue;
+		min-width: 160px;
+		height: 25px;
+		 z-index: 1;
+	}
+	.dropdown-menu a{
+		background-color: skyblue;
+		color:yellow;
+		text-decoration: none;
+		display: block;
+		height: 25px;
+	
+	}
+	.dropdown-menu a:hover{
+		background-color: brown;
+		color:maroon;
+		height: 25px;
+		
+	
+	}
+	.dropdown:hover .dropdown-menu{
+		display:block;
+		height: 25px;
+		
+	}
+	.dropdown:hover{
+		background-color:maroon;
+		text-decoration: none;
+		height: 25px;
+	}
+	#tablediv td a:link{
+	
+		color:white;
+		text-decoration: none;
+	
+	}
+	#tablediv td a:hover{
+	
+		color:white;
+		text-decoration: underline;
+	
+	}
+	#tablediv td a:visited{
+	
+		color:white;
+		text-decoration: none;
+	
+	}
+	#tablediv td a:active{
+	
+		color:red;
+		text-decoration: none;
+	
+	}
+	
+	#bodydiv{
+		height:600px;
+		margin:auto;
+		width:80%;
+	}
+	
+	#body_left{
+		height:600px;
+		float:left;
+		width:75%;
+		background-image:linear-gradient(lightyellow,white);
+	
+	}
+	
+	#body_left_top{
+		height:350px;
+		width:100%;
+		margin:0px;
+		padding:0px;
+		border: 5px groove white;
+		text-align:center;
+		background-image:linear-gradient(white,lightyellow);
+		}
+
+	#body_left_bottomleft{
+		height:200px;
+		width:25%;
+		float:left;
+		background-color: grey;
+	}
+	
+	#body_left_bottomiddle{
+		height:200px;
+		width:25%;
+		float:left;
+		
+	}
+	#body_left_bottomiddle2{
+		height:200px;
+		width:25%;
+		float:left;
+		
+	}
+	
+	#body_left_bottomright{
+		height:200px;
+		width:25%;
+		float:right;
+		background-color: red;
+		
+	}
+	
+	#body_right_top{
+		height:200px;
+		float:right;
+		width:25%;
+		background-image: linear-gradient(skyblue,white);
+		margin-bottom: 1px;
+		
+	}
+	#body_right_top td{
+		background-color: maroon;
+		text-align:center;
+		height:40px;
+	}
+	#body_right_top td a:link{
+				color:white;
+				text-align:center;
+				text-decoration:none;
+			}
+			#body_right_top td a:hover{
+				color:white;
+				text-decoration:none;
+			}
+			#body_right_top td a:visited{
+				color:white;
+				text-decoration:none;
+			}
+			#body_right_top td a:active{
+				color:white;
+				text-decoration:none;
+			}
+	
+	#body_right_bottom{
+		height:398px;
+		float:right;
+		width:248px;
+		background-image:linear-gradient(white,skyblue);
+		margin-top: 1px;
+	}
+	#body_right_bottom table{
+		
+		height:auto;
+		width:100%;
+	}
+	
+	#body_right_bottom td{
+	font-family:Verdana, Arial, Helvetica, sans-serif, Times New Roman;
+	font-size:12px;
+	height:30px;
+	font-weight:bold;
+	padding-left:10px;
+		border-bottom:solid 1px black;
+	}
+	
+	#table_form{
+		height:180px;
+		width: 200px;
+		margin: 10px;
+		background-image: linear-gradient(lightgrey,white,lightgrey);
+		
+		padding:5px;
+		color:maroon;
+	
+	}
+	
+	#table_form a:link {
+	
+		color: maroon;
+	}
+	
+	#table_form a:hover {
+	
+		color: blue;
+	}
+	
+	#footerdiv{
+		height:100px;
+		width:80%;
+		margin:auto;
+		padding-top:20px;
+		background-color:maroon;
+	}
+	
+	#footerdiv td{
+		
+		color:white;
+	}
+	
+	#footerdiv a:link, #body_right_top a:link{
+	
+		color: white;
+		text-decoration:none;
+	}
+	
+	#footerdiv a:hover, #body_right_top a:hover {
+	
+		color: yellow;
+	}
+	
+	#footerdiv a:visited, #body_right_top a:visited {
+	
+		color: white;
+	}
+	
+	#footerdiv a:active, #body_right_top a:active {
+	
+		color: red;
+	}
+	
+	#nepal{
+		font-size:18px;
+	}
+	.explore{
+	color:red;
+	}
+		
+	
+	#menu_td{
+	
+		background-color: maroon;
+		border:1px none;
+		border-top-left-radius: 10px;
+		width:150px;
+		height:30px;
+		text-align: center;
+		color:white;
+	}
+	
+		#form{
+		height:auto;
+		width:400px;
+		margin:auto;
+	
+	}
+	#form table{
+		margin:0px;
+		padding:10px;
+		background-image: linear-gradient(lightgrey,white);
+	}
+	#form td{
+		color:maroon;
+	}
+	
+	
+	#body_right{
+	
+	height:720px;
+	}
+	
+
+	
